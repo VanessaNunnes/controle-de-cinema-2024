@@ -5,7 +5,7 @@
     var filmeAtivo = caminho.StartsWith("/filme") ? "nav-link active fw-semibold" : "nav-link";
     var generoAtivo = caminho.StartsWith("/genero") ? "nav-link active fw-semibold" : "nav-link";
     var salaAtivo = caminho.StartsWith("/sala") ? "nav-link active fw-semibold" : "nav-link";
-    var funcionarioAtivo = caminho.StartsWith("/funcionario") ? "nav-link active fw-semibold" : "nav-link";
+    //var funcionarioAtivo = caminho.StartsWith("/funcionario") ? "nav-link active fw-semibold" : "nav-link";
 
     MensagemViewModel? mensagem = ViewBag.Mensagem ?? null;
 }
@@ -33,7 +33,7 @@
                         <a class="px-4 @filmeAtivo" href="/filme/listar">Filmes</a>
                         <a class="px-4 @generoAtivo" href="/genero/listar">Gêneros</a>
                         <a class="px-4 @salaAtivo" href="/sala/listar">Salas</a>
-                        <a class="px-4 @funcionarioAtivo" href="/funcionario/listar">Funcionários</a>
+                        //<a class="px-4 @funcionarioAtivo" href="/funcionario/listar">Funcionários</a>
                     }
                 </div>
                 
