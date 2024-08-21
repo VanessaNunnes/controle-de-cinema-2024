@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ControleCinema.Aplicacao\ControleCinema.Aplicacao.csproj" />
+      <ProjectReference Include="..\ControleCinema.Infra.Orm\ControleCinema.Infra.Orm.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+      <PackageReference Include="FluentResults" Version="3.16.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.bundle.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.bundle.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.esm.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.esm.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.esm.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.esm.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\js\bootstrap.min.js.map" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="Views\Filme\Detalhes.cshtml" />
+      <None Include="Views\Filme\Editar.cshtml" />
+      <None Include="Views\Filme\Excluir.cshtml" />
+      <None Include="Views\Filme\Inserir.cshtml" />
+      <None Include="Views\Filme\Listar.cshtml" />
+      <None Include="Views\Filme\_Informacoes.cshtml" />
+      <None Include="Views\Genero\Detalhes.cshtml" />
+      <None Include="Views\Genero\Editar.cshtml" />
+      <None Include="Views\Genero\Excluir.cshtml" />
+      <None Include="Views\Genero\Inserir.cshtml" />
+      <None Include="Views\Genero\Listar.cshtml" />
+      <None Include="Views\Genero\_Informacoes.cshtml" />
+      <None Include="Views\Inicio\Index.cshtml" />
+      <None Include="Views\Sala\Detalhes.cshtml" />
+      <None Include="Views\Sala\Editar.cshtml" />
+      <None Include="Views\Sala\Excluir.cshtml" />
+      <None Include="Views\Sala\Inserir.cshtml" />
+      <None Include="Views\Sala\Listar.cshtml" />
+      <None Include="Views\Sala\_Informacoes.cshtml" />
+    </ItemGroup>
+
+</Project>
